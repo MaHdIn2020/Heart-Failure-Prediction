@@ -1,0 +1,455 @@
+
+[     UTC     ] Logs for heart-failure-prediction0.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[08:02:46] 🚀 Starting up repository: 'heart-failure-prediction', branch: 'main', main module: 'app.py'
+[08:02:46] 🐙 Cloning repository...
+[08:02:46] 🐙 Cloning into '/mount/src/heart-failure-prediction'...
+
+[08:02:46] 🐙 Cloned repository!
+[08:02:46] 🐙 Pulling code changes from Github...
+[08:02:47] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.14.7 environment at /home/adminuser/venv
+Resolved 50 packages in 519ms
+  × Failed to download and build `numpy==1.24.3`
+  ├─▶ Build backend failed to determine requirements with `build_wheel()`
+  │   (exit status: 1)
+
+  │   [stderr]
+  │   Traceback (most recent call last):
+  │     File "<string>", line 8, in <module>
+  │       from setuptools.build_meta import __legacy__ as backend
+  │     File
+  │   "/home/adminuser/.cache/uv/builds-v0/.tmpZjBRfJ/lib/python3.14/site-packages/setuptools/__init__.py",
+  │   line 10, in <module>
+  │       import distutils.core
+  │   ModuleNotFoundError: No module named 'distutils'
+
+  ╰─▶ distutils was removed from the standard library in Python 3.12. Consider
+      adding a constraint (like `numpy >1.24.3`) to avoid building a version
+      of numpy that depends on distutils.
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.14.7 environment at /home/adminuser/venv
+Resolved 4 packages in 30ms
+Prepared 1 package in 36ms
+Installed 4 packages in 10ms
+ + markdown-it-py==4.2.0
+ + [2026-08-18 08:02:52.640328] mdurl==0.1.2
+ + pygments==2.21.0
+ + rich==15.0.0
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting streamlit==1.28.0 (from -r /mount/src/heart-failure-prediction/requirements.txt (line 1))
+  Downloading streamlit-1.28.0-py2.py3-none-any.whl.metadata (8.1 kB)
+Collecting pandas==2.1.0 (from -r /mount/src/heart-failure-prediction/requirements.txt (line 2))
+  Downloading pandas-2.1.0.tar.gz (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 77.9 MB/s eta 0:00:00[2026-08-18 08:02:54.133961] 
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [329 lines of output]
+      + meson setup /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md --vsenv --native-file=/tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/meson-python-native-file.ini
+      The Meson build system
+      Version: 1.0.1
+      Source dir: /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d
+      Build dir: /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build
+      Build type: native build
+      Project name: pandas
+      Project version: 2.1.0
+      C compiler for the host machine: cc (gcc 14.2.0 "cc (Debian 14.2.0-19) 14.2.0")
+      C linker for the host machine: cc ld.bfd 2.44
+      C++ compiler for the host machine: c++ (gcc 14.2.0 "c++ (Debian 14.2.0-19) 14.2.0")
+      C++ linker for the host machine: c++ ld.bfd 2.44
+      Cython compiler for the host machine: cython (cython 0.29.37)
+      Host machine cpu family: x86_64
+      Host machine cpu: x86_64
+      Program python found: YES (/home/adminuser/venv/bin/python)
+      Did not find pkg-config by name 'pkg-config'
+      Found Pkg-config: NO
+      Build targets in project: 53
+      
+      pandas 2.1.0
+      
+        User defined options
+          Native files: /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/meson-python-native-file.ini
+          buildtype   : release
+          b_ndebug    : if-release
+          b_vscrt     : md
+      
+      Found ninja-1.13.0.git.kitware.jobserver-pipe-1 at /tmp/pip-build-env-v7ozo1ph/normal/bin/ninja
+      + /tmp/pip-build-env-v7ozo1ph/normal/bin/ninja
+      [1/151] Generating pandas/_libs/khash_primitive_helper_pxi with a custom command
+      [2/151] Generating pandas/_libs/algos_common_helper_pxi with a custom command
+      [3/151] Generating pandas/_libs/index_class_helper_pxi with a custom command
+      [4/151] Generating pandas/_libs/intervaltree_helper_pxi with a custom command
+      [5/151] Generating pandas/_libs/hashtable_class_helper_pxi with a custom command
+      [6/151] Generating pandas/_libs/hashtable_func_helper_pxi with a custom command
+      [7/151] Generating pandas/_libs/sparse_op_helper_pxi with a custom command
+      [8/151] Generating pandas/_libs/algos_take_helper_pxi with a custom command
+      [9/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/period.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/period.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/period.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/period.pyx -o pandas/_libs/tslibs/period.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/period.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [10/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/np_datetime.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/np_datetime.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/np_datetime.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/np_datetime.pyx -o pandas/_libs/tslibs/np_datetime.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/np_datetime.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [11/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/offsets.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/offsets.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/offsets.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/offsets.pyx -o pandas/_libs/tslibs/offsets.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/offsets.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [12/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/nattype.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/nattype.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/nattype.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/nattype.pyx -o pandas/_libs/tslibs/nattype.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/nattype.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [13/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/conversion.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/conversion.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/conversion.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/conversion.pyx -o pandas/_libs/tslibs/conversion.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/conversion.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [14/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/ccalendar.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/ccalendar.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/ccalendar.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/ccalendar.pyx -o pandas/_libs/tslibs/ccalendar.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/ccalendar.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [15/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/dtypes.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/dtypes.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/dtypes.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/dtypes.pyx -o pandas/_libs/tslibs/dtypes.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/dtypes.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [16/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/strptime.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/strptime.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/strptime.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/strptime.pyx -o pandas/_libs/tslibs/strptime.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/strptime.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [17/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/vectorized.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/vectorized.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/vectorized.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/vectorized.pyx -o pandas/_libs/tslibs/vectorized.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/vectorized.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [18/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/timestamps.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/timestamps.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/timestamps.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/timestamps.pyx -o pandas/_libs/tslibs/timestamps.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/timestamps.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [19/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/fields.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/fields.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/fields.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/fields.pyx -o pandas/_libs/tslibs/fields.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/fields.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [20/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/algos.pyx
+      FAILED: [code=1] pandas/_libs/algos.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/algos.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/algos.pyx -o pandas/_libs/algos.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/algos.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [21/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/parsing.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/parsing.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/parsing.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/parsing.pyx -o pandas/_libs/tslibs/parsing.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/parsing.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [22/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/timedeltas.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/timedeltas.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/timedeltas.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/timedeltas.pyx -o pandas/_libs/tslibs/timedeltas.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/timedeltas.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [23/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/arrays.pyx
+      FAILED: [code=1] pandas/_libs/arrays.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/arrays.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/arrays.pyx -o pandas/_libs/arrays.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/arrays.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [24/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/tzconversion.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/tzconversion.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/tzconversion.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/tzconversion.pyx -o pandas/_libs/tslibs/tzconversion.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/tzconversion.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [25/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/timezones.pyx
+      FAILED: [code=1] pandas/_libs/tslibs/timezones.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/timezones.pyx.c
+      cython -M --fast-fail -3 --include-dir /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/.mesonpy-7h_o7fog/build/pandas/_libs/tslibs '-X always_allow_keywords=true' /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/timezones.pyx -o pandas/_libs/tslibs/timezones.cpython-314-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/timezones.pyx.c
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+      #
+      # See __init__.cython-30.pxd for the real Cython header
+      #
+      
+      # intentionally created compiler error that only triggers on Cython < 3.0.0
+      DEF err = int('Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.')
+                  ^
+      ------------------------------------------------------------
+      
+      /tmp/pip-build-env-v7ozo1ph/overlay/lib/python3.14/site-packages/numpy/__init__.pxd:12:13: Error in compile-time expression: ValueError: invalid literal for int() with base 10: 'Build aborted: the NumPy Cython headers require Cython 3.0.0 or newer.'
+      [26/151] Compiling Cython source /tmp/pip-install-zhzwc9_d/pandas_0eb5b0df7a7a4e7ab306fd049aba840d/pandas/_libs/tslibs/base.pyx
+      ninja: build stopped: subcommand failed.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.7/310.7 kB 13.9 MB/s eta 0:00:00[2026-08-18 08:03:11.206147] 
+Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.7/91.7 kB 438.8 MB/s eta 0:00:00[2026-08-18 08:03:11.223201] 
+Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 84.9 MB/s eta 0:00:00[2026-08-18 08:03:11.252560] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.21.0
+    Uninstalling Pygments-2.21.0:
+      Successfully uninstalled Pygments-2.21.0
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.2.0
+    Uninstalling markdown-it-py-4.2.0:
+      Successfully uninstalled markdown-it-py-4.2.0
+  Attempting uninstall: rich
+    Found existing installation: rich 15.0.0
+    Uninstalling rich-15.0.0:
+      Successfully uninstalled rich-15.0.0
+Successfully installed markdown-it-py-4.2.0 mdurl-0.1.2 pygments-2.21.0 rich-15.0.0
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[08:03:13] ❗️ installer returned a non-zero exit code
+[08:03:13] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.
